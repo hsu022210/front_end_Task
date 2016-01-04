@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Internship Task by Alec</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- angularjs -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <link href='style.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body ng-controller="TodoListController as todoList">
+
+        <div class="page">
+            <div class="container-fluid">
+                <div class="row sections">
+
+                    <div class="col-md-2 col-md-offset-1 col-md-height leftSection">
+
+                        <div class="row user">
+                            <div class="col-md-12">
+
+                                <div class="row userPic">
+                                    <div class="col-md-12">
+                                        <p>
+
+                                        </p>
+                                        <img src="images/userPic.png" alt="Smiley face" height="60" width="60" class="img-thumbnail">
+                                        <p>User Name</p>
+                                        <p>Name LastName</p>
+                                    </div>
+                                </div>
+
+                                <p>            </p>
+
+                                <div class="row userFollowers">
+
+                                    <div class="col-xs-3">
+                                        <p>
+                                            <span style="color: black; font-size: 15px;">ROI</span>
+                                            <br>
+                                            <span style="color: red; font-size: 15px;">20%</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <p>
+                                            FOLLOWING
+                                            <br>
+                                            <span style="color: #7CC6FE;">25</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-xs-5">
+                                        <p>
+                                            FOLLOWERS
+                                            <br>
+                                            <span style="color: #7CC6FE;">92</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row detailInfo">
+                            <div class="col-md-12">
+                                <p>            </p>
+
+                                <div class="row">
+
+                                    <div class="col-xs-6 poolSize">
+                                        <p>
+                                            POOL SIZE
+                                            <br>
+                                            <span style="color:red;">$990,000</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-xs-6 realizedProfit">
+                                        <p>
+                                            REALIZED PROFIT
+                                            <br>
+                                            <span style="color:red;">$880</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <hr>
+
+                                <div class="row">
+
+                                    <div class="col-xs-6 detailInfoTitle">
+                                        <p>
+                                            AVAILABLE
+                                            <br>
+                                            TOTAL ALLOCATED
+                                            <br>
+                                            PROFIT
+                                            <br>
+                                            EQULITY
+                                            <br>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-xs-6 detailInfoAmount">
+                                        <p>
+                                            $1234
+                                            <br>
+                                            $2345
+                                            <br>
+                                            <span style="color:green;">-$1234</span>
+                                            <br>
+                                            $2345
+                                            <br>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row functionList">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp Home</li>
+                                    <li><span class="glyphicon glyphicon-list" aria-hidden="true"></span>&nbsp Portfolio</li>
+                                    <li><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>&nbsp Watchlist</li>
+                                    <li><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>&nbsp Notification</li>
+                                    <li><span class="glyphicon glyphicon-book" aria-hidden="true"></span>&nbsp Strategy Store</li>
+                                    <li><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>&nbsp Discover People</li>
+                                    <li><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp My Acoount</li>
+                                    <li><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp Setting</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-7 col-md-offset-1 col-md-height watchList">
+
+                        <div class="row watchListTop">
+
+                            <div class="col-xs-2">WATCHLIST</div>
+
+                            <div class="col-xs-8">
+                                <span class="alert alert-danger noMoreStock">
+                                    No more stock to add !
+                                </span>
+                            </div>
+
+                            <div class="col-xs-2"><button type="button" class="btn btn-info" ng-click="todoList.add()">ADD</button></div>
+
+                        </div>
+
+                        <hr>
+                        <p>    </p>
+
+                        <table class="table table-responsive">
+
+                            <tr class="watchListTitle">
+                                <td></td>
+                                <td>Symbol</td>
+                                <td>Current price</td>
+                                <td>Up/Down Value</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                            <tr ng-repeat="todo in todoList.watchList track by $index">
+                                <td><h4><span class="label label-{{todo.status}}">ALERT</span></h4></td>
+                                <td>
+                                    {{todo.name}}
+                                    <br>
+                                    <span style="color: #afafaf">{{todo.symbol}}</span>
+                                </td>
+                                <td style="color: {{todo.upDownColor}};">{{todo.price}}</td>
+                                <td style="color: {{todo.upDownColor}};">{{todo.value}} % </td>
+                                <td style="color: {{todo.upDownColor}};">{{todo.k}} k <br>( {{todo.kPercent}} %)</td>
+                                <td><button type="button" class="btn btn-info" ng-click="todoList.remove($index)"> DELETE </button></td>
+                            </tr>
+
+                            <tr class="watchListResult">
+
+                                <td colspan="3" >
+                                    <img src="images/stock.png" alt="stock" height="80%" width="80%">
+                                </td>
+
+                                <td colspan="3">
+
+                                    <span class="row">
+                                        <span class="col-xs-4" ng-repeat="todo in todoList.watchListResult">
+                                            {{todo.title}}
+                                            <br>
+                                            <span style="color: {{todo.upDownColor}}; font-size: 22px;">{{todo.percent}} %</span>
+                                        </span>
+                                    </span>
+
+                                    <span class="row">
+
+                                        <span class="col-xs-6">
+                                            <button type="button" class="btn btn-lg btn-success">Sell</button>
+                                        </span>
+
+                                        <span class="col-xs-6">
+                                            <button type="button" class="btn btn-lg btn-danger">Buy</button>
+                                        </span>
+
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="6">
+                                    <span style="font-size: 24px;">+</span>
+                                </td>
+                            </tr>
+
+                            <tr class="watchListBlankArea">
+                                <td colspan="6">
+
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  jquery -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

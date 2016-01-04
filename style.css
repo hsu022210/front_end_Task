@@ -1,0 +1,101 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Quicksand, 微軟正黑體, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+hr{
+    padding: 0px;
+    margin: 0px;
+}
+
+.page{
+    background-color: #DAE0E6;
+    padding-bottom: 5%;
+}
+
+.sections{
+    margin-top: 2%;
+}
+
+.leftSection{
+    font-size: 14px;
+}
+
+.user{
+    background-color: #ffffff;
+    font-weight: bolder;
+}
+
+.user .userPic{
+    background-image: url(images/userBackground.jpg);
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+}
+
+.user .userFollowers{
+    color: #afafaf;
+}
+
+.detailInfo{
+    background-color: #ffffff;
+    margin-top: 5%;
+    font-weight: bolder;
+}
+
+.detailInfo .detailInfoTitle{
+    color: #afafaf;
+    text-align: left;
+    font-size: 11px;
+}
+
+.detailInfo .detailInfoAmount{
+    color: red;
+    text-align: right;
+    font-size: 11px;
+}
+
+.functionList{
+    background-color: #ffffff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+}
+
+.functionList ul
+{
+    list-style-type: none;
+    text-align: left;
+    padding: 2%;
+}
+
+.functionList ul li
+{
+    margin: 10%;
+    margin-left: 0px;
+    font-size: 16px;
+}
+
+.glyphicon{
+    color: #34E4EA;
+}
+
+.watchList{
+    background-color: #ffffff;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 0px;
+    padding-bottom: 5%;
+}
+
+.watchListTop{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.watchListTitle{
+    background-color: #fafafa;
+    color: #8f8f8f;
+}
